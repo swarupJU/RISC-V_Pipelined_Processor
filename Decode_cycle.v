@@ -1,5 +1,18 @@
-`timescale 1ns / 1ps
+  /* Copyright 2025 Swarup Saha Roy
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.*/
+
+`timescale 1ns / 1ps
 
 module Decode_cycle(
     input clk, rst,
@@ -121,7 +134,7 @@ module RegisterFile (
     input wire [4:0] A1, A2, A3,    // 5-bit addresses (0-31)
     input wire [31:0] WD3,          // Write Data
     output reg [31:0] RD1, RD2,    // Read Data
-    output reg [1023:0] debug_regs_flat // Flattened output: 32 regs × 32 bits
+    output reg [1023:0] debug_regs_flat // Flattened output: 32 regs Ã— 32 bits
 );
 
     // Declare 32 registers of 32-bit width
@@ -260,7 +273,7 @@ module Main_Decoder(
                 ALUOp      = 2'b00;
             end
             default: begin
-                // Invalid or unhandled opcode ? all default (NOP)
+                // Invalid or unhandled opcode 
             end
         endcase
     end
