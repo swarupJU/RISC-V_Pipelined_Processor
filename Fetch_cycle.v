@@ -1,4 +1,16 @@
+  /* Copyright 2025 Swarup Saha Roy
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.*/
 
 
 `timescale 1ns / 1ps
@@ -196,29 +208,6 @@ imem[36] = 8'h83;
 imem[37] = 8'hA4;
 imem[38] = 8'h03;
 imem[39] = 8'h00;
-
-//imem[36] = 8'hB3;  // opcode = 0x33
-//imem[37] = 8'h81;  // bits 11:7 (rd = x3 = 00011), bits 14:12 (funct3 = 000)
-//imem[38] = 8'h20;  // bits 19:15 (rs1 = x1 = 00001), bits 24:20 (rs2 = x2 = 00010)
-//imem[39] = 8'h00;  // bits 31:25 (funct7 = 0000000)
-
-
-
-
-
-// ADD x5, x5, x6
-//imem[20] = 8'hB3;
-//imem[21] = 8'h82;
-//imem[22] = 8'h62;
-//imem[23] = 8'h00;
-
-//// ADD x1, x1, x2
-//imem[20] = 8'h33;  // LSB
-//imem[21] = 8'h80;
-//imem[22] = 8'h20;
-//imem[23] = 8'h00;  // MSB
-
-
 
         end
     end
