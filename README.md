@@ -50,7 +50,7 @@ The processor can execute the following instruction types and operations:
 #### 3) Execute Cycle
 #### 4) Memory Cycle
 #### 5) Writeback Cycle
-#### 6) Hazard Unit
+#### 6) Hazard Control
 #### 7) Top_Pipeline
 ### ii) testbench-
 #### tb_TopPipeline
